@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/flatifycss/dist/css/flatify.min.css" rel="stylesheet"
+      crossorigin="anonymous" />
+
+    <!-- JavaScript : Popperjs + FlatifyCSS -->
+    <script src="https://unpkg.com/@popperjs/core@2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatifycss/dist/js/flatify.min.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+    <script src="./js/app.js" defer></script>
+    <title>Format Code</title>
+
+  </head>
+
+  <body>
+    <div class="container-sm" id="container">
+      <h1>Format Code</h1>
+      <div class="input-wrapper is-textarea floating-label">
+        <textarea id="code" name="code" rows="15" cols="60" placeholder="Enter source code here"></textarea>
+        <label class="form-label" name="code" for="yourname">Enter your source code</label>
+      </div>
+      <button class="button style-accent  bordered" id="formatReplaceTabs">Format & Replace Tabs</button>
+      <button class="button bordered" id="format">Format</button>
+      <button class="button bordered" id="replaceTab">Replace Tabs</button>
+
+
+    </div>
+
+
+
+  </body>
+
+</html>
