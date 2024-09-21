@@ -41,13 +41,13 @@ const copyToClipboard = async (text) => {
   }
 };
 
-const btnFormat = document.querySelector('#format');
-btnFormat.addEventListener('click', () => {
-  const code = document.getElementById('code');
-  code.value = formatSnippet(code.value);
-  copyToClipboard(code.value);
-  createToast('Code formatted & copied to clipboard');
-});
+// const btnFormat = document.querySelector('#format');
+// btnFormat.addEventListener('click', () => {
+//   const code = document.getElementById('code');
+//   code.value = formatSnippet(code.value);
+//   copyToClipboard(code.value);
+//   createToast('Code formatted & copied to clipboard');
+// });
 
 const btnReplaceTab = document.querySelector('#replaceTab');
 btnReplaceTab.addEventListener('click', () => {
